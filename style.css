@@ -1,6 +1,7 @@
 .navbar{
     background-color: #fcd80d;
     height: 40px;
+    font-size: 0.9rem;
 }
 
 .navbar-collapse{
@@ -27,7 +28,7 @@ h1{
 }
 
 .seccion-oscura {
-    background-color: #1b1b32;
+    background-color: black;
     color:white;
 }
 
@@ -62,17 +63,35 @@ h1{
 
 
 /* Seccion Hero */
-.hero{
+/* .hero{
+    
     background-image: url(imagenes/fondo-olivos.jpg);
     background-repeat: no-repeat;
-    background-color: #f5f6f7;
+   background-color: #f5f6f7;
     min-height: 450px;
     text-align: center;
     height: 100vh;
-    /* zoom: 80%; */
     background-position: center;
 
-}
+} */
+
+/* The hero image */
+.hero{
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url("imagenes/fondo-olivos.jpg");
+  
+    /* Set a specific height */
+    height: 100vh;
+    min-height: 450px;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
 
 .hero-principal{
     padding: 3rem;
@@ -101,15 +120,18 @@ h1{
     text-align: center;
 }
 
-/* Experiencia */
+/* Como funciona */
 
 .experiencia {
     padding: 40px;
+    background-color: black;
+    color: white;
 }
 
 .experiencia .columna {
     padding: 20px;
-    border: 2px solid #8080804d;
+    /* border: 2px solid #8080804d; */
+    border-radius: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -118,8 +140,8 @@ h1{
 }
 
 .experiencia .columna:hover {
-    color: white;
-    background-color: #1b1b32;
+    color: black;
+    background-color: #fcd80d;
 }
 
 .experiencia-titulo{
@@ -221,7 +243,7 @@ h1{
     }
     
     h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 }
 
@@ -248,7 +270,7 @@ h1{
 
 @media screen and (min-width: 1440px) {
     h1 {
-        font-size: 12rem;
+        font-size: 14rem;
     }
     
 }
