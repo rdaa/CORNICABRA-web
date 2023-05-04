@@ -1,6 +1,6 @@
 .navbar{
-    padding: 0.1rem;
     background-color: #fcd80d;
+    height: 40px;
 }
 
 .navbar-collapse{
@@ -22,7 +22,7 @@ h1{
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     color:#fcd80d;
-    -webkit-text-stroke: 2px black; /* width and color */
+    /*-webkit-text-stroke: 2px black;*/
     
 }
 
@@ -69,7 +69,7 @@ h1{
     min-height: 450px;
     text-align: center;
     height: 100vh;
-    zoom: 50%;
+    /* zoom: 80%; */
     background-position: center;
 
 }
@@ -208,13 +208,20 @@ h1{
 
 /* Adaptable (Responsivo) */
 
+@media screen and (max-width: 1440px){
+    
+    h1 {
+        font-size: 8rem;
+    }
+}
+
 @media screen and (max-width: 767px){
     .navbar-brand{
         display: none;
     }
     
     h1 {
-        font-size: 7rem;
+        font-size: 5rem;
     }
 }
 
@@ -234,7 +241,7 @@ h1{
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
     
 }
