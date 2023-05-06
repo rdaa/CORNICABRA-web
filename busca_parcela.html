@@ -9,7 +9,7 @@
     <meta name="keywords" content="HTML,CSS,Javascript,React">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Titulo -->
-    <title>Registro | cornicabra</title>
+    <title>Buscar Parcela | cornicabra</title>
     <!-- Favicon -->
     <link rel="icon" href="imagenes/icono.png">
     
@@ -43,65 +43,46 @@
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Inicia Sesión</a>
+                <a class="nav-link active" href="login.html">Inicia Sesión</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Registrarse</a>
+                <a class="nav-link" href="registro.html">Registrarse</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-    <section class="gradient-custom">
+    <section class="vh-100 gradient-custom">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-              <div class="card bg-dark text-white" style="border-radius: 1rem;">
-                <div class="card-body p-5 text-center">
-      
+            <div class="col-10 col-sm-10 col-md-10 col-lg-12 col-xl-12 card  bg-dark text-white" style="border-radius: 1rem;">
+              
+                <div class="card-body col-10 col-sm-10 col-md-10 col-lg-6 col-xl-5 p-5 text-center">
                   <div class="mt-md-4 pb-5">
+                    <h2 class="subtitulo fw-bold mb-2 text-uppercase">Buscar parcela</h2>
+                    <p class="text-white-50 mb-5">Introduce los datos de la parcela:</p>
       
-                    <h2 class="fw-bold mb-2 text-uppercase subtitulo">Regístrate</h2>
-                    <p class="text-white-50 mb-5">Introduce tus datos:</p>
-
                     <div class="form-outline form-white mb-4">
-                      <input type="text" id="txtNombre" class="form-control form-control-lg" />
-                      <label class="form-label" for="txtNombre">Nombre</label>
-                    </div>
-
-                    <div class="form-outline form-white mb-4">
-                      <input type="text" id="txtApellidos" class="form-control form-control-lg" />
-                      <label class="form-label" for="txtApellidos">Apellidos</label>
-                    </div>
-
-                    <div class="form-outline form-white mb-4">
-                      <input type="tel" id="txtTel" class="form-control form-control-lg" />
-                      <label class="form-label" for="txtTel">Teléfono</label>
+                      <input type="number" id="inputProvincia" class="form-control form-control-lg" />
+                      <label class="form-label" for="inputProvincia">Provincia</label>
                     </div>
       
                     <div class="form-outline form-white mb-4">
-                      <input type="email" id="txtEmail" class="form-control form-control-lg" />
-                      <label class="form-label" for="txtEmail">Email</label>
-                    </div>
-      
-                    <div class="form-outline form-white mb-4">
-                      <input type="password" id="txtPassword" class="form-control form-control-lg" />
-                      <label class="form-label" for="txtPassword">Contraseña</label>
+                      <input type="number" id="inputMunicipio" class="form-control form-control-lg" />
+                      <label class="form-label" for="inputMunicipio">Municipio</label>
                     </div>
     
       
-                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Registro</button>
-      
-                  </div>
-      
-                  <div>
-                    <p class="mb-0">¿Ya tienes una cuenta?<a href="login.html" class="text-white-50 fw-bold"> Inicia sesión</a>
-                    </p>
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Buscar</button>
                   </div>
       
                 </div>
-              </div>
+                <div class="card-body col-10 col-sm-10 col-md-10 col-lg-6 col-xl-7 p-5 text-center" >
+                  <div class="contenedor-canvas">
+                    <canvas class="canvas-parcela"></canvas>
+                  </div>
+                </div>
             </div>
           </div>
         </div>

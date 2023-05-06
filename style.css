@@ -66,6 +66,15 @@ h1{
     font-family: 'Libre Baskerville', serif;
 }
 
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* .card-body {
+    display: flex;
+} */
 
 /* The hero image */
 .hero{
@@ -228,10 +237,26 @@ h1{
     background: black;
     
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url("imagenes/fondo-olivos.jpg");
-    height: 1500px;
+    
 }
 
 
+.canvas-parcela {
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+
+.contenedor-canvas {
+    
+    height: 100%;
+    width: 100%;
+}
+
+.canvas {
+    height: 100%;
+}
 
 /* Adaptable (Responsivo) */
 
