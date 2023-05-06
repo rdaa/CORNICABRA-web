@@ -2,6 +2,7 @@
     background-color: #fcd80d;
     height: 40px;
     font-size: 0.9rem;
+    color: white;
 }
 
 .navbar-collapse{
@@ -131,6 +132,7 @@ h1{
 .experiencia .columna {
     padding: 20px;
     /* border: 2px solid #8080804d; */
+    border: 3px solid white;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
@@ -228,6 +230,16 @@ h1{
     opacity: 0.2;
 }
 
+
+/* Login */
+.gradient-custom {
+    /* fallback for old browsers */
+    background: black;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url("imagenes/fondo-olivos.jpg");
+}
+
+
 /* Adaptable (Responsivo) */
 
 @media screen and (max-width: 1440px){
@@ -244,6 +256,15 @@ h1{
     
     h1 {
         font-size: 4rem;
+    }
+
+    .nav-item {
+        width: 160px;
+        background-color: #fcd80d;
+        z-index: 1;
+        text-align: center;
+        border-radius: 5px;
+        margin: 5px;
     }
 }
 
