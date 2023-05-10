@@ -53,39 +53,66 @@
         </div>
       </nav>
 
-    <section class="vh-100 gradient-custom">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-10 col-sm-10 col-md-10 col-lg-12 col-xl-12 card  bg-dark text-white" style="border-radius: 1rem;">
-              
-                <div class="card-body col-10 col-sm-10 col-md-10 col-lg-6 col-xl-5 p-5 text-center">
-                  <div class="mt-md-4 pb-5">
-                    <h2 class="subtitulo fw-bold mb-2 text-uppercase">Buscar parcela</h2>
-                    <p class="text-white-50 mb-5">Introduce los datos de la parcela:</p>
-      
-                    <div class="form-outline form-white mb-4">
-                      <input type="number" id="inputProvincia" class="form-control form-control-lg" />
-                      <label class="form-label" for="inputProvincia">Provincia</label>
-                    </div>
-      
-                    <div class="form-outline form-white mb-4">
-                      <input type="number" id="inputMunicipio" class="form-control form-control-lg" />
-                      <label class="form-label" for="inputMunicipio">Municipio</label>
-                    </div>
-    
-      
-                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Buscar</button>
+    <section class="h-auto gradient-custom">
+      <!-- Contenedor buscador-->
+      <div class="container py-5 h-auto">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-10 col-sm-10 col-md-10 col-lg-12 col-xl-12 card  bg-dark text-white" style="border-radius: 1rem;">
+            <!-- Formulario -->
+            <div class="card-body col-10 col-sm-10 col-md-10 col-lg-6 col-xl-2 p-5 text-center">
+              <div class="mt-md-4 pb-5">
+                <h2 class="subtitulo fw-bold mb-2 text-uppercase">Buscar parcela</h2>
+                <p class="text-white-50 mb-5">Introduce los datos de la parcela:</p>
+                <form action="" class="row row-cols-lg-auto g-3 align-items-center">
+                  <!-- Provincia -->
+                  <div class="row form-outline form-white mb-4">
+                    <label class="col form-label" for="inputProvincia">Provincia</label>
+                    <input type="number" id="inputProvincia" class="col form-control form-control-lg" />
                   </div>
-      
-                </div>
-                <div class="card-body col-10 col-sm-10 col-md-10 col-lg-6 col-xl-7 p-5 text-center" >
-                  <div class="contenedor-canvas">
-                    <canvas class="canvas-parcela"></canvas>
+                  <!-- Municipio -->
+                  <div class="row form-outline form-white mb-4">
+                    <label class="col form-label" for="inputMunicipio">Municipio</label>
+                    <input type="number" id="inputMunicipio" class="col form-control form-control-lg" />
                   </div>
-                </div>
+                  <!-- Agregado -->
+                  <div class="row form-outline form-white mb-4">
+                    <label class="col form-label" for="inputAgregado">Agregado</label>
+                    <input type="number" id="inputAgregado" class="col form-control form-control-lg" />
+                  </div>
+                  <!-- Zona -->
+                  <div class="row form-outline form-white mb-4">
+                    <label class="col form-label" for="inputZona">Zona</label>
+                    <input type="number" id="inputZona" class="col form-control form-control-lg" />
+                  </div>
+                  <!-- Poligono -->
+                  <div class="row form-outline form-white mb-4">
+                    <label class="col form-label" for="inputPoligono">Polígono</label>
+                    <input type="number" id="inputPoligono" class="col form-control form-control-lg" />
+                  </div>
+                  <!-- Parcela -->
+                  <div class="row form-outline form-white mb-4">
+                    <label class="col form-label" for="inputParcela">Parcela</label>
+                    <input type="number" id="inputParcela" class="col form-control form-control-lg" />
+                  </div>
+                  <!-- Recinto -->
+                  <div class="row form-outline form-white mb-4">
+                    <label class="col form-label" for="inputRecinto">Recinto</label>
+                    <input type="number" id="inputRecinto" class="col form-control form-control-lg" />
+                  </div>
+                </form>
+  
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Buscar</button>
+              </div>
+            </div>
+            <!-- Caja Resultado -->
+            <div class="card-body col-10 col-sm-10 col-md-10 col-lg-6 col-xl-7 p-5 text-center" >
+              <div class="contenedor-canvas">
+                <canvas class="canvas-parcela"></canvas>
+              </div>
             </div>
           </div>
         </div>
+      </div>
       </section>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
